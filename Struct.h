@@ -6,7 +6,7 @@
         #include <ctype.h>
 
         #define NB_ETUDIANT 50
-        #define NB_PC 20
+        #define NB_PC 50
 
         typedef struct{
             int Numero;
@@ -34,6 +34,8 @@
         Etudiant* RemplirTabEt(FILE *file,int *c);
         void TrierTabEt(Etudiant *tab,int c);
         PC* RemplirTabPC(FILE *file,int *c);
-        void EcritureDuFichier(FILE *file,Etudiant *tabEt,PC *tabPC,int c);
+        void EcritureDuFichier(FILE *file,Etudiant *tabEt,PC *tabPC,int c1,int c2);
+        void modifInfo(Etudiant *tabEt,int TailleDuTabEt,PC *tabPC,int TailleDuTabPC);
+        void AjoutInfo();
     
 #endif
